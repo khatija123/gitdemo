@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<section>
+    <div class="container">
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+              
+               <div class="row">
+                   <div class="col-lg-6">
+                <form (ngSubmit)="processForm()">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="email" [(ngModel)]="email" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Subject</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" name="subject" [(ngModel)]="subject" placeholder="Enter your subject line">
+                      </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" placeholder="Enter your message here" [(ngModel)]="message"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/images1/team/logo.jpeg" class="card-img-top"  width="200px" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Address: Bangalore, India
+                            Ness Technologies (India) Pvt. Ltd.
+                            No. 33, 6th Block,
+                            17th H Main Road
+                            Koramangala,
+                            Bangalore, Karnataka, 560095
+                            +91 80 4196 1000</h5>
+                          <p class="card-text"></p>
+                          <a routerLink="/aboutus" class="btn btn-primary">Know more</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+         </div>    
+    <!--Section: Contact v.2-->
+    </section>
+    
